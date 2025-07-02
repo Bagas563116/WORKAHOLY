@@ -24,6 +24,11 @@ body {
   color: var(--color-text_off);
 }
 
+section {
+  margin: 0;
+  padding: 0;
+}
+
 p {
   letter-spacing: 0.2rem;
 }
@@ -149,6 +154,11 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero a {
+  text-decoration: none;
+  color: var(--color-text_off);
 }
 
 /* ------------------------------------------- klik klik section ----------------------------------------- */
@@ -280,7 +290,7 @@ h1 {
 
 .awan1 img {
   position: absolute;
-  top: 7rem;
+  top: 8rem;
   width: 30%;
 }
 
@@ -299,6 +309,12 @@ h1 {
 .awan4 img {
   position: absolute;
   top: 98rem;
+  width: 30%;
+}
+
+.awan5 img {
+  position: absolute;
+  top: 154rem;
   width: 30%;
 }
 
@@ -368,7 +384,7 @@ h1 {
 
 #btnStart {
   position: relative;
-  bottom: 5rem;
+  bottom: 5.1rem;
   width: 45%;
   cursor: pointer;
 }
@@ -410,11 +426,14 @@ h1 {
 
 /* ------------------------------------------- bawah tanah ----------------------------------------- */
 
+.bgCoklat {
+  background-color: #f8dcc4;
+}
+
 .notes {
   position: relative;
   bottom: 10rem;
   background-color: #f8dcc4;
-  height: 100rem;
 }
 
 .notes h1 {
@@ -434,14 +453,17 @@ h1 {
   padding-top: 27rem;
 }
 
-.stample img {
+.stample a {
   position: relative;
-  right: 3rem;
+  right: 1rem;
   padding: 3rem;
-  width: 22%;
   cursor: pointer;
 }
 
-#stample:hover {
+#stample {
+  width: 78%;
+}
+
+.stample a:hover {
   transform: scale(1.2);
 }

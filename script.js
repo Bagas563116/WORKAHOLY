@@ -61,18 +61,21 @@ gerak();
 let posisiAwan1 = 0;
 let posisiAwan2 = -500;
 let posisiAwan3 = 0;
-let posisiAwan4 = -300;
+let posisiAwan4 = -700;
+let posisiAwan5 = 0;
 
 const awan1 = document.getElementById("awan1");
 const awan2 = document.getElementById("awan2");
 const awan3 = document.getElementById("awan3");
 const awan4 = document.getElementById("awan4");
+const awan5 = document.getElementById("awan5");
 
 function gerakAwan() {
   posisiAwan1 += 1.5;
   posisiAwan2 += 1.5;
   posisiAwan3 += 1.7;
   posisiAwan4 += 1.7;
+  posisiAwan5 += 1.5;
 
   if (posisiAwan1 > window.innerWidth) {
     posisiAwan1 = -awan1.width;
@@ -90,10 +93,15 @@ function gerakAwan() {
     posisiAwan4 = -awan4.width;
   }
 
+  if (posisiAwan5 > window.innerWidth) {
+    posisiAwan5 = -awan5.width;
+  }
+
   awan1.style.right = posisiAwan1 + "px";
   awan2.style.right = posisiAwan2 + "px";
   awan3.style.right = posisiAwan3 + "px";
   awan4.style.right = posisiAwan4 + "px";
+  awan5.style.right = posisiAwan5 + "px";
 
   requestAnimationFrame(gerakAwan);
 }
@@ -145,3 +153,5 @@ setInterval(function () {
 }, 200);
 
 /* ----------------------------------------------- notes ---------------------------------------------------- */
+
+const stample = document.getElementById("stample");
