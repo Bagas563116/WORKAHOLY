@@ -28,6 +28,12 @@ p {
   letter-spacing: 0.2rem;
 }
 
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
 /* ------------------------------------------- navigation ----------------------------------------- */
 
 .nav {
@@ -99,12 +105,13 @@ p {
 /* ------------------------------------------- hero section ----------------------------------------- */
 
 .hero {
-  padding-top: 4rem;
+  padding-top: 5rem;
+  position: relative;
   z-index: 50;
 }
 
 .judul {
-  padding: 4rem 6rem 2rem;
+  padding: 3rem 6rem 2rem;
 }
 .hero img {
   width: 60%;
@@ -113,13 +120,11 @@ p {
 .isiHero {
   padding: 0 6rem;
   margin-right: 30rem;
-  z-index: 49;
 }
 
 .isiHero p {
   font-size: 1.1rem;
   line-height: 1.5rem;
-  z-index: 49;
 }
 
 .button {
@@ -127,7 +132,6 @@ p {
   display: inline-block;
   padding: 1rem 0;
   cursor: pointer;
-  z-index: 50;
 }
 
 .button img {
@@ -155,17 +159,17 @@ p {
   display: flex;
   flex-direction: column;
   text-align: right;
-  z-index: 10;
 }
 
 /* --------------------------- versi hidup ---------------------------*/
 
 .intpHidup {
+  position: relative;
   display: inline-block;
   text-align: right;
   padding-right: 5.5rem;
   margin-bottom: -8.5rem;
-  z-index: 15;
+  z-index: 60;
 }
 
 .intpHidup #nyawa {
@@ -199,10 +203,11 @@ p {
 
 .intpMati {
   display: none;
+  position: relative;
   text-align: right;
   padding-right: 5.5rem;
   margin-bottom: -8.5rem;
-  z-index: 15;
+  z-index: 60;
 }
 
 .intpMati #divHantu {
@@ -269,4 +274,174 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* --------------------------- serba serbi awan ---------------------------*/
+
+.awan1 img {
+  position: absolute;
+  top: 7rem;
+  width: 30%;
+}
+
+.awan2 img {
+  position: absolute;
+  top: 45rem;
+  width: 30%;
+}
+
+.awan3 img {
+  position: absolute;
+  top: 70rem;
+  width: 30%;
+}
+
+.awan4 img {
+  position: absolute;
+  top: 98rem;
+  width: 30%;
+}
+
+/* --------------------------- INTP kinton ---------------------------*/
+
+.kinton {
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+  padding-top: 25rem;
+}
+#bagas {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 20%;
+}
+
+/* ------------------------------------------- gameZone section ----------------------------------------- */
+
+.gameZone {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.gameZone .container {
+  text-align: center;
+  background-image: url("images/konsol.png");
+  background-position: center;
+  background-size: 91%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.konsol {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.konsol img {
+  width: 95%;
+}
+
+.layar img {
+  width: 100%;
+  padding: 8rem 0;
+}
+
+#next,
+#back {
+  padding: 20rem 0;
+  width: 2%;
+  cursor: pointer;
+}
+
+#next:hover,
+#back:hover {
+  transform: scale(1.2);
+}
+
+#btnStart {
+  position: relative;
+  bottom: 5rem;
+  width: 45%;
+  cursor: pointer;
+}
+
+#btnStart:hover {
+  transform: scale(1.2);
+}
+
+/* ------------------------------------------- permukaan tanah ----------------------------------------- */
+
+.permukaan {
+  height: 50rem;
+  background-image: url("images/tanah.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+  padding-top: 5rem;
+}
+
+.lebah {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.lebah img {
+  padding-right: 5rem;
+  width: 13.5%;
+  transform: rotate(-15deg);
+}
+
+#lebah1 {
+  display: inline-block;
+}
+
+#lebah1 {
+  display: none;
+}
+
+/* ------------------------------------------- bawah tanah ----------------------------------------- */
+
+.notes {
+  position: relative;
+  bottom: 10rem;
+  background-color: #f8dcc4;
+  height: 100rem;
+}
+
+.notes h1 {
+  padding-top: 8rem;
+}
+
+.stample {
+  background-image: url("images/KERTAS.png");
+  background-position: center;
+  background-size: 88%;
+  background-repeat: no-repeat;
+  height: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 10rem;
+  padding-top: 27rem;
+}
+
+.stample img {
+  position: relative;
+  right: 3rem;
+  padding: 3rem;
+  width: 22%;
+  cursor: pointer;
+}
+
+#stample:hover {
+  transform: scale(1.2);
 }
